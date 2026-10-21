@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { colleges } from "../data/colleges";
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://iet-college-backend.onrender.com/api";
 
 const fields = [
   { name: "studentName", label: "Student Name", type: "text", required: true },
@@ -128,7 +128,7 @@ export default function Contact() {
     } catch (error) {
       console.error("Application submission failed:", error);
       setErrorMessage(
-        "Cannot connect to the server. Please check that the backend is running at localhost:3000."
+        "Cannot connect to the server. Please check that the backend is running at iet-college-backend.onrender.com."
       );
     } finally {
       setLoading(false);
@@ -318,3 +318,4 @@ export default function Contact() {
     </main>
   );
 }
+
