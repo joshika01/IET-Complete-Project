@@ -1,5 +1,4 @@
-const API_BASE = "https://iet-college-backend.onrender.com/api";
-
+const API_BASE = "/api";
 export async function adminLogin(username, password) {
   const response = await fetch(`${API_BASE}/admin/login`, {
     method: "POST",
