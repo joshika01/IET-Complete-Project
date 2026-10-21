@@ -1,0 +1,22 @@
+﻿node_modules/
+**/node_modules/
+.env
+.env.*
+!.env.example
+build/
+dist/
+coverage/
+*.log
+
+# Local image staging and backups
+arts-images-staging/
+engineering-images-staging/
+medical-images-staging/
+college-images-backup-*/
+colleges-images.zip
+
+# Local databases and backup files
+backend/data/*.sqlite
+backend/data/*.db
+*.backup*
+*.before-syntax-fix
