@@ -54,14 +54,14 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://localhost:5175"
+      "http://localhost:5175",
+      "https://iet-complete-project.vercel.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type"]
   })
 );
-
 app.use(express.json({ limit: "20kb" }));
 
 // Local development session configuration.
